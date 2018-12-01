@@ -1,12 +1,24 @@
+//
+// Main index.js file for the pet-finder app
+//
 var express = require('express'),
     app = express(),
     port = process.env.PORT || 3000;
-    
-app.use(express.static(__dirname + '/views'));
+var bodyParser = require('body-parser');
+var middleware = require('./middleware');
 
-app.get("/", function(req, res){
-    res.send('index.html');
+app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({extended : true}));
+app.set('view engine', 'ejs');
+
+// *** Routes section *** //
+app.get('/', middleware.getLabel, function(req, res){
+    res.render('index.ejs', {
+        label : req.lbl
+    });
 });
+
+// *** end of Routes section *** //
 
 app.listen(port, function(){
     console.log('Server running on port ' + port);
