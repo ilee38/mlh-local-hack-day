@@ -1,0 +1,22 @@
+{
+  "name": "pet-finder",
+  "version": "1.0.0",
+  "description": "Major League Hacking's Local Hack Day @ UTSA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilee38/mlh-local-hack-day.git"
+  },
+  "author": "iram lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilee38/mlh-local-hack-day/issues"
+  },
+  "homepage": "https://github.com/ilee38/mlh-local-hack-day#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
