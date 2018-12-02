@@ -12,9 +12,11 @@ app.use(bodyParser.urlencoded({extended : true}));
 app.set('view engine', 'ejs');
 
 // *** Routes section *** //
-app.get('/', middleware.getLabel, function(req, res){
+app.get('/', middleware.getLabel, middleware.getLabel2, middleware.getLabel3, function(req, res){
     res.render('index.ejs', {
-        label : req.lbl
+        labels : req.lbls,
+        labels2: req.lbls2,
+        labels3: req.lbls3
     });
 });
 
