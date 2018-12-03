@@ -1,4 +1,4 @@
-# Major League Hacking's Local Hack Day @ UTSA
+# Major League Hacking's Local Hack Day @ [UTSA](https://www.utsa.edu)
 
 A 12-hour hackaton across several countries and schools. More info on [Local hack day's website](https://localhackday.mlh.io/)
 
